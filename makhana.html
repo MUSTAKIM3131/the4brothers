@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makhana Magic – Discover India's Finest!</title>
+    <link rel="stylesheet" href="./makhana.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <h1>Makhana Magic</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h2>Wholesome, Crispy, Delicious</h2>
+            <p>Experience the premium taste of hand-processed Indian makhana – healthy snacking, anytime, anywhere!</p>
+            <button onclick="scrollToContact()">Order Now</button>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="grid about-grid">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="makhana bowl">
+                <div>
+                    <p><strong>Makhana Magic</strong> is your gateway to the purest, finest fox nuts (makhana) sourced and processed right here in India. We pride ourselves on delivering nature’s super snack direct to your home!</p>
+                    <ul>
+                        <li>100% natural and hand-sorted in clean, modern facilities</li>
+                        <li>Low-calorie, high-protein snacks for all ages</li>
+                        <li>Additive-free & gluten-free</li>
+                        <li>Eco-friendly practices and packaging</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="benefits" class="bright-bg">
+        <div class="container">
+            <h2>Why Choose Makhana?</h2>
+            <div class="grid benefits-grid">
+                <div class="benefit">
+                    <img src="https://images.unsplash.com/photo-1455656678494-4d1b5fcca8a7?auto=format&fit=crop&w=300&q=80" alt="Healthy">
+                    <h3>Super Healthy</h3>
+                    <p>Rich in protein, calcium, and anti-oxidants; low in fat and cholesterol.</p>
+                </div>
+                <div class="benefit">
+                    <img src="https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=300&q=80" alt="Indian origin">
+                    <h3>Pure Indian Origin</h3>
+                    <p>Proudly farmed and processed in India supporting local communities.</p>
+                </div>
+                <div class="benefit">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=300&q=80" alt="Tasty">
+                    <h3>Tasty Yet Guilt-Free</h3>
+                    <p>Crispy, crunchy, naturally flavoured – snack without compromise!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="products">
+        <div class="container">
+            <h2>Our Product Range</h2>
+            <div class="grid products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1523987355523-c7b5b0723cdd?auto=format&fit=crop&w=400&q=80" alt="Classic makhana">
+                    <h4>Classic Roasted</h4>
+                    <p>Simple, crunchy, and positively addictive.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80" alt="Spicy Makhana">
+                    <h4>Spicy Masala</h4>
+                    <p>Bold Indian masalas for the spice lover in you.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?auto=format&fit=crop&w=400&q=80" alt="Cheese makhana">
+                    <h4>Cheesy Delight</h4>
+                    <p>A cheesy snack with all the goodness and none of the guilt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="bright-bg">
+    <div class="container">
+        <h2>Get in Touch / Bulk Orders</h2>
+        <form id="contactForm" action="https://formsubmit.co/mustakimshaikh8421@gmail.com" method="POST">
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message*</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <!-- Optional hidden fields -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="formMessage"></p>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Makhana Magic. Processed in Pune, Maharashtra, India.</p>
+        </div>
+    </footer>
+    <script src="makhana.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
